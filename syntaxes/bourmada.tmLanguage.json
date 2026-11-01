@@ -1,0 +1,42 @@
+{
+    "scopeName": "source.bourmada",
+    "patterns": [
+        {
+            "name": "comment.line.double-slash.bourmada",
+            "match": "//.*$"
+        },
+        {
+            "name": "string.quoted.double.bourmada",
+            "begin": "\"",
+            "end": "\""
+        },
+        {
+            "name": "constant.numeric.bourmada",
+            "match": "\\b\\d+(\\.\\d+)?\\b"
+        },
+        {
+            "name": "keyword.control.bourmada",
+            "match": "\\b(let|if|else|while|do|fn|return|break)\\b"
+        },
+        {
+            "name": "storage.type.bourmada",
+            "match": "\\b(int|str|bool|void)\\b"
+        },
+        {
+            "name": "constant.language.boolean.bourmada",
+            "match": "\\b(true|false)\\b"
+        },
+        {
+            "name": "support.function.bourmada",
+            "match": "\\bprint\\b"
+        },
+        {
+            "name": "keyword.operator.bourmada",
+            "match": "==|!=|<=|>=|&&|\\|\\||[+*/%=<>!-]"
+        },
+        {
+            "name": "entity.name.function.bourmada",
+            "match": "\\b[A-Za-z_][A-Za-z0-9_]*(?=\\s*\\()"
+        }
+    ]
+}
