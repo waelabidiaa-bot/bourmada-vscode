@@ -1,48 +1,60 @@
 {
-    "name": "bourmada-language",
-    "displayName": "BOURMADA Language Support",
-    "description": "Syntax highlighting for BOURMADA",
-    "version": "0.0.1",
-    "publisher": "bourmada",
-    "engines": {
-        "vscode": "^1.80.0"
-    },
-    "categories": ["Programming Languages"],
-    "contributes": {
-        "languages": [
-            {
-                "id": "bourmada",
-                "aliases": ["BOURMADA", "bourmada"],
-                "extensions": [".bmd"],
-                "configuration": "./language-configuration.json"
-            }
+  "name": "bourmada-language",
+  "displayName": "BOURMADA Language Support",
+  "description": "Syntax highlighting, editor configuration, and language support for BOURMADA source files.",
+  "version": "0.0.1",
+  "publisher": "bourmada",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "bourmada",
+    "language",
+    "programming",
+    "syntax"
+  ],
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waelabidiaa-bot/bourmada-vscode"
+  },
+  "homepage": "https://github.com/waelabidiaa-bot/bourmada-vscode",
+  "bugs": {
+    "url": "https://github.com/waelabidiaa-bot/bourmada-vscode/issues"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "bourmada",
+        "aliases": [
+          "BOURMADA",
+          "bourmada"
         ],
-        "grammars": [
-            {
-                "language": "bourmada",
-                "scopeName": "source.bourmada",
-                "path": "./syntaxes/bourmada.tmLanguage.json"
-            }
-            
+        "extensions": [
+          ".bmd"
         ],
-        "icon": "images/icon.png",
-            "repository": {
-                "type": "git",
-                "url": "https://github.com/waelabidiaa-bot/bourmada-vscode"
-            },
-            "homepage": "https://github.com/waelabidiaa-bot/bourmada-vscode",
-            "bugs": {
-                "url": "https://github.com/waelabidiaa-bot/bourmada-vscode/issues"
-            },
-            "keywords": [
-                "bourmada",
-                "language",
-                "programming",
-                "syntax"
-            ]
-        
-    }
-
-    
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "bourmada",
+        "scopeName": "source.bourmada",
+        "path": "./syntaxes/bourmada.tmLanguage.json"
+      }
+    ]
+  },
+  "files": [
+    "language-configuration.json",
+    "syntaxes/**/*.json",
+    "images/*.png",
+    "README.md",
+    "LICENSE"
+  ]
 }
+
 
