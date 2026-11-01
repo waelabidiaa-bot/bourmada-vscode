@@ -1,0 +1,10 @@
+{
+    "iconDefinitions": {
+        "_bourmada": {
+            "iconPath": "./bourmada.png"
+        }
+    },
+    "fileExtensions": {
+        "bmd": "_bourmada"
+    }
+}

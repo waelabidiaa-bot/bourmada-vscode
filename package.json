@@ -46,14 +46,22 @@
         "scopeName": "source.bourmada",
         "path": "./syntaxes/bourmada.tmLanguage.json"
       }
-    ]
+    ],
+    "iconThemes": [
+    {
+        "id": "bourmada-icons",
+        "label": "BOURMADA Icons",
+        "path": "./icons/bourmada-icon-theme.json"
+    }
+]
   },
   "files": [
     "language-configuration.json",
     "syntaxes/**/*.json",
     "images/*.png",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "icons/**/*"
   ]
 }
 
